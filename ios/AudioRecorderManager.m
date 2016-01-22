@@ -134,7 +134,7 @@ RCT_EXPORT_METHOD(prepareRecordingAtPath:(NSString *)path sampleRate:(float)samp
 
   NSDictionary *recordSettings = [NSDictionary dictionaryWithObjectsAndKeys:
           _audioQuality, AVEncoderAudioQualityKey,
-          _audioEncoding, AVEncoderBitRateKey,
+          _audioEncoding, AVFormatIDKey,
           _audioChannels, AVNumberOfChannelsKey,
           _audioSampleRate, AVSampleRateKey,
           nil];
